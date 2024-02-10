@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            background-color: aquamarine;
+        }
+
+        h1 {
+            color: brown;
+        }
+
+        h2 {
+            color: violet;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>222222</h2>
+
+    <div item >
+        <h1>11111111</h1>
+    </div>
+
+    <div item >
+        <img src="01.png">
+    </div>
+
+    <div id="ipnotarea">
+        <input type="text" id="textinput" placeholder="請輸入文字">
+        <button onclick="displaytext()">顯示文字</button>
+    </div>
+    
+    <div id="displayarea">
+
+    </div>
+
+    <script>
+
+        function displaytext() {
+        
+            // 取得輸入的文字
+            var inputtext = document.getElementById("textinput").value;
+
+            // 建立顯示文字地方
+            var displayarea = document.getElementById("displayarea");
+
+            // 清空
+            displayarea.innerHTML = "";
+
+            // 建立文字節點
+            var textnode = document.createTextNode(inputtext);
+
+            //最後將文字節點顯示
+            displayarea.appendChild(textnode);
+
+        }
+
+    </script>
+    
+
+
+</body>
+</html>
